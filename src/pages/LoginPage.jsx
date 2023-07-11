@@ -15,53 +15,54 @@ const LoginPage = () => {
     }
 
     return (
-        <div className="container">
-            <div className="main-login login-page">
-                <form className='form' onSubmit={onSubmit}>
-                    <div className='login-form__item form-item'>
-                        <label className='form-item__label'>
-                            Login
-                        </label>
-                        <input 
-                            type="text" 
-                            className='form-item__input'
-                            value={login}
-                            onChange={(event) => setLogin(event.target.value)}
-                        />
-                    </div>
-                    <div className='login-form__item form-item'>
-                        <label className='form-item__label'>
-                            password
-                        </label>
-                        <input 
-                            type="password" 
-                            className='form-item__input'
-
-                            value={password}
-                            onChange={(event) => setPassword(event.target.value)}
-                        />
-                        
-                    </div>
-
-                    <div className='login-form__item form-item'>
-                        <label className='form-item__label'>
-                            password
-                        </label>
-                        <input type='checkbox' 
-                            className='form-item__checkbox'
-                            value={checkbox}
-                            onChange={() => setCheckbox(!checkbox)}
-                        />
-                        
-                    </div>
-
-                    <button type='submit'>
-                        Войти
-                    </button>
-                </form>
+        
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Регистрация</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>или используйте свой E-mail для регистрации</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button>Зарегистрироваться</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Авторизация</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>или используйте свой аккаунт</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Забыли пароль?</a>
+                <button className='ButtonLogin'>Вход</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Добро пожаловать!</h1>
+                    <p>Чтобы оставаться на связи с нами, пожалуйста, войдите в систему с вашей личной информацией</p>
+                    <button class="ghost" id="signIn">Авторизация</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Привет, Друг!</h1>
+                    <p>Введите свои личные данные и начните путешествие вместе с нами</p>
+                    <button class="ghost" id="signUp">Регистрация</button>
+                </div>
             </div>
         </div>
-    )
-}
-
+    </div>
+        )
+        }
+        
 export default LoginPage

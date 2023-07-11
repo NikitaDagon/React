@@ -4,6 +4,8 @@ import img2 from '../../assets/icon_menu.svg'
 
 import MenuItem from './MenuItem'
 import links from '../../data'
+import { useDisclosure } from '@chakra-ui/react'
+import SideBar from '../SideBar/SideBar'
 
 function Header() {
     const menuLinksLeft = [
@@ -29,7 +31,18 @@ function Header() {
             id: 4,
             title: "cart",
             link: "cart"
+    
         },
+        {
+            id:5,
+            title:"login",
+            link:"login"
+        },
+        {
+            id:6,
+            title:"sign",
+            link:"sign"
+        }
     ]
 
     const menuItemsRight = menuLinksRight.map( (l) => (
@@ -45,7 +58,10 @@ function Header() {
             title={l.title}
             link={l.link}
         />
+
     ))
+
+    const {isOpen,onOpen,onClose} = useDisclosure()
     return (
         <header>
         <div class="header">
@@ -61,14 +77,17 @@ function Header() {
                     </div>
                     <div class="header-menu__right menu-block">
                         {menuItemsRight}
-                        <button class="menu-block__item menu-item">
-                            <img class="menu-item__burger burger" src={img2}/>
+                        <button class="menu-block__item menu-item" onClick={onOpen}>
+                            <img class="menu-item__burger burger" src={img2} />
+                            
                         </button>
                     </div>
                 </div>
             </div>
             
-
+        <SideBar
+        isOpen={isOpen}
+        onClose={onClose}/>
             
 
         </div>

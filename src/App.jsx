@@ -5,6 +5,7 @@ import CatalogPage from './pages/CatalogPage'
 import AboutPage from './pages/AboutPage'
 import CartPage from './pages/CartPage'
 import LoginPage from './pages/LoginPage'
+import SignPage from './pages/SignPage'
 import links from './data'
 
 function App() {
@@ -19,10 +20,12 @@ function App() {
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/cart" element={<CartPage/>}/>
           <Route path='/login' element={<LoginPage/>}/>
+          <Route path ='/sign' element = {<SignPage/>}/>
         </Routes>
     </>
     
   )
+  
 }
 
 export default App
