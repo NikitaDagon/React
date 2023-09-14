@@ -1,0 +1,266 @@
+.main-section {
+    margin: 60px 0px;
+}
+
+.collection-content{
+    margin: 0px auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+._img-1 {
+    background: url('./assets/placeholder2.png') no-repeat center;   
+}
+._img-2 {
+    background: url('./assets/container.jpg') no-repeat center;   
+}
+._img-3 {
+    background: url('./assets/chair.png') no-repeat center;   
+}
+._img-4 {
+    background: url('./assets/placeholder3.png') no-repeat center;   
+}
+._img-5 {
+    background: url('./assets/placeholder4.png') no-repeat center;   
+}
+
+
+.collection-gallery {
+    display: flex;
+    gap: 30px;
+    padding: 0px 30px;
+    margin-top: 30px;
+}
+
+.collection-gallery__item{
+    height: 350px;
+    width: 350px;
+    
+}
+
+.collection-gallery__item:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.collection-gallery__item:hover .collection-item__content {
+    display: flex;
+    opacity: 1;
+}
+
+.collection-gallery__item {
+    display: flex;
+    align-items: center;
+}
+
+.collection-item__content {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.collection-item__content h2 {
+    color: black;
+}
+
+.collection-item__content p {
+    color: black;
+}
+.collection-item__divider{
+    width: 185px;
+    height: 1px;
+    background-color: white;
+}
+
+
+.sofa-section {
+    padding: 160px 0px;
+    background: url('./assets/Mask.png') no-repeat center;
+}
+
+.sofa-content__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    color:white;
+}
+
+.sofa-content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    max-width: 530px;
+}
+
+.sofa-content__text{
+    text-align: start;
+    color: white;
+}
+
+.timeline-card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 270px;
+    margin-top: 30px;
+}
+
+.timeline-card-header__title {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 23px;
+color: #363838;
+margin-left: 10px;
+}
+
+.timeline-card-header {
+    display: flex;
+    align-items: center;
+
+}
+
+.timeline-card__text{
+    text-align: start;
+}
+
+.timeline-top {
+    display: flex;
+    gap:280px
+}
+
+.timeline-middle {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-middle__line {
+    width: 100%;
+    height: 1px;
+    background-color: #363838;
+}
+
+.vertical-line {
+    height: 30px;
+    width: 1px;
+    background-color: #363838;
+}
+
+.timeline-bottom{
+    display: flex;
+    margin-left: 280px;
+}
+
+.timeline-middle__stacks{
+    display: flex;
+}
+
+
+.timeline-middle__stacks._top .vertical-line:first-child{
+    margin-right: 550px;
+}
+
+.timeline-middle__stacks._bottom{
+    margin-left: 280px
+}
+
+
+
+.pictures_container{
+    text-align:center;
+    padding: 80px 0 90px;
+}
+.BR{
+  margin: 0 13px; 
+  background-color: transparent;
+  border: 1px solid #454647 ;
+  border-radius: 20px ;
+  padding: 6px 16px;
+  color:#8F8D8D;
+  cursor: pointer;
+}
+.LRF{
+  margin: 0 13px; 
+  background-color: transparent;
+  border: 1px solid #454647 ;
+  border-radius: 20px ;
+  padding: 6px 16px;
+  color:#8F8D8D;
+  cursor: pointer;
+}
+.OF{
+  margin: 0 13px; 
+  background-color: transparent;
+  border: 1px solid #454647 ;
+  border-radius: 20px ;
+  padding: 6px 16px;
+  color:#8F8D8D;
+  cursor: pointer;
+}
+.DRF{
+    margin: 0 13px; 
+    background-color: transparent;
+    border: 1px solid #454647 ;
+    border-radius: 20px ;
+    padding: 6px 16px;
+    color:#8F8D8D;
+    cursor: pointer;
+  }
+
+  .Chair_upperword{
+    margin: 0 13px; 
+    background-color: transparent;
+    border: 1px solid #454647 ;
+    border-radius: 20px ;
+    padding: 6px 16px;
+    color:#8F8D8D;
+    cursor: pointer;
+  }
+
+  .gallery_items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap:30px 50px;
+    width: 100%;
+    
+  }
+  .gallery_item:first-child{
+    padding:20px;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.blog-box{
+   padding-bottom:100px 
+}
+
+.blog-box_title{
+    color:black;
+    font-size: 36px;
+    line-height: 51px;
+    margin-bottom:30px;
+    text-align: center;
+    max-width: 430pw;
+}
+.blog-box_items{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img-link{
+    margin-bottom:19px;
+    display: inline-block;
+}

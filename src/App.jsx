@@ -1,6 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import '../src/components/Body/Body.css'
 import MainPage from './pages/MainPage'
+import BodyPage from './pages/BodyPage'
 import CatalogPage from './pages/CatalogPage'
 import AboutPage from './pages/AboutPage'
 import CartPage from './pages/CartPage'
